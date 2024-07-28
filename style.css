@@ -1,0 +1,309 @@
+*{
+    margin: o;
+    padding: o;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(241, 240, 240);
+    top: 0;
+    padding: 10px 40px;
+    margin-left: 0px;
+    position: fixed;
+
+}
+header p{
+    color: black;
+    font-weight: 700;
+    font-size: small;
+    text-transform: uppercase;
+}
+header div {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: space-between;
+   gap: 110px;
+   padding: 20px 0px;
+}
+header div a{
+    color: grey;
+}
+header div a:hover{
+    color: rgb(238, 50, 3);
+}
+header >a{
+    background-color: white;
+    color: black;
+    
+    margin-bottom: 2px;
+    border: 1px solid rgb(158, 158, 158);
+    transition:1s;
+    padding: 1px 5px;
+    border-radius: 10%;
+    
+}
+header > a:hover{
+    background-color: rgb(250, 103, 66);
+}
+main{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Home{
+    width: 100%;
+    background-color: rgb(228, 226, 226);
+    min-height: (100vh - 30px);
+    display: flex;
+    flex-direction: row;
+   
+
+}
+#Home div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 100px 100px;
+
+    
+}
+#Home div b{
+    font-weight: 1000;
+    font-size: 90px;
+    color: rgb(238, 50, 3);
+}
+#Home div p{
+    margin-left: 95px;
+    border: 1px solid grey;
+    padding: 0px 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+#Home div p:hover{
+    background-color: rgb(250, 103, 66);
+    border-color: black;
+}
+#Home nav{
+    display: flex;
+    flex-direction:column ;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 100px 200px;
+    margin-left: 150px;
+    gap: 60px;
+}
+#Home nav article{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    cursor: pointer;
+}
+
+#Home nav article img{
+    border: 1.5px solid rgb(158, 158, 158);
+    padding: 5px;
+    height: 35px;
+    width: 45px;
+    transition: 1s;
+}
+#Home nav article img:hover{
+    border: 1px solid rgb(250, 103, 66);
+}
+#Home nav article .sneakers{
+    border-color: rgb(238, 50, 3)
+}
+#Products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 70px;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+}
+#Products nav{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    gap: 150px;
+} 
+#Products p{
+    color: black;
+    font-weight: 100;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+#Products nav p{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    font-weight: 200;
+    border: 1px solid rgb(216, 213, 213);
+    transition: 1s;
+    
+}
+#Products nav p:hover{
+    border-color: rgb(238, 50, 3);
+}
+#Products nav p img{
+    height: 160px;
+    width: 180px;
+    padding: 20px;
+}
+#Products div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+    cursor: pointer;
+}
+#Products div p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    font-weight: 200;
+    border: 1px solid rgb(216, 213, 213);
+    padding: 5px;
+    transition: 1s;
+}
+#Products div p:hover{
+    border-color: rgb(238, 50, 3);
+}
+#Products div p img{
+    height: 150px;
+    width: 170px;
+    padding: 20px;   
+}
+#Order{
+    width: 100%;
+    background-color: rgb(228, 226, 226);
+    min-height: (100vh - 30px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+#Order >p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    font-weight: 100;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Order span {
+    display: flex;
+    flex-direction: row;
+    margin:50px 120px;
+}
+#Order span div h4{
+    font-weight: 100;
+    border: 1px solid grey;
+    background-color: rgb(216, 213, 213);
+    margin: 5px 179px;
+    padding: 3px 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+#Order span div h4:hover{
+    background-color: rgb(250, 103, 66);
+}
+#Order span nav{
+    background-color: white;
+    gap: 50px;
+    padding: 90px 50px;
+    margin-left: 40px;
+}
+#Order span nav b{
+    color: rgb(238, 50, 3);
+}
+#Order span nav p{
+    margin-top: 30px;
+}
+#Order span nav h5{
+    margin-top: 60px;
+    border: 1px solid black;
+    background-color: rgb(216, 213, 213);
+    padding: 5px;
+    margin-right: 380px;
+    cursor: pointer;
+    transition: 1s;
+}
+#Order span nav h5:hover{
+    background-color: rgb(250, 103, 66);
+}
+#Contact{
+    width: 100%;
+    background-color: white;
+    min-height: (100vh - 30px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+}
+#Contact p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    font-weight: 100;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Contact  span{
+    display: flex;
+    flex-direction: row;
+}
+#Contact span div{
+    height: 50px;
+    margin-left: 200px;
+    width: 30px;
+}
+#Contact span >p{
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+    font-size: large;
+    align-items: flex-start;
+    margin-left: 600px;
+}
+footer{
+    margin-top: 50px;
+    padding: 5px;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
